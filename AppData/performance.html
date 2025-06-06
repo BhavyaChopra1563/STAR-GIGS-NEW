@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Performances - Star Gigs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+
+<div class="flex min-h-screen">
+  <!-- Sidebar -->
+  <aside class="w-64 bg-white shadow-md flex flex-col">
+    <div class="p-6 border-b text-2xl font-bold text-orange-600">★ STAR GIGS</div>
+    <nav class="flex-1 p-4 space-y-2">
+      <a href="dashboard.html" class="block px-4 py-2 rounded hover:bg-gray-100">Dashboard</a>
+      <a href="performance.html" class="block px-4 py-2 rounded bg-orange-100 text-orange-600 font-semibold">Performances</a>
+      <a href="Gigs.html" class="block px-4 py-2 rounded hover:bg-gray-100">Gigs</a>
+      <a href="Messages.html" class="block px-4 py-2 rounded hover:bg-gray-100">Messages</a>
+      <a href="calender.html" class="block px-4 py-2 rounded hover:bg-gray-100">Calendar</a>
+      <a href="payout.html" class="block px-4 py-2 rounded hover:bg-gray-100">Payouts</a>
+      <a href="Profile.html" class="block px-4 py-2 rounded hover:bg-gray-100">Profile</a>
+      <a href="Settings.html" class="block px-4 py-2 rounded hover:bg-gray-100">Settings</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="flex-1 p-8 space-y-6">
+    <!-- Header + Button -->
+    <div class="flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Your Performances</h1>
+      <button onclick="document.getElementById('modal').classList.remove('hidden')" class="bg-orange-600 text-white px-4 py-2 rounded hover:bg-orange-700">+ Add Performance</button>
+    </div>
+
+    <!-- Performance Table -->
+    <div class="bg-white p-6 rounded shadow">
+      <table class="w-full table-auto text-sm">
+        <thead class="text-gray-500 border-b">
+          <tr>
+            <th class="py-2 text-left">Event</th>
+            <th class="py-2 text-left">Location</th>
+            <th class="py-2 text-left">Date</th>
+            <th class="py-2 text-left">Type</th>
+            <th class="py-2 text-left">Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b">
+            <td class="py-2">City Mall Music Night</td>
+            <td>Toronto</td>
+            <td>Mar 22, 2025</td>
+            <td>SOLO</td>
+            <td>⭐️⭐️⭐️⭐️</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2">Wedding Gig</td>
+            <td>Niagara Falls</td>
+            <td>Feb 14, 2025</td>
+            <td>BAND</td>
+            <td>⭐️⭐️⭐️⭐️⭐️</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+
+<!-- Modal -->
+<div id="modal" class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center hidden">
+  <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+    <h2 class="text-xl font-semibold mb-4">Add Performance</h2>
+    <form class="space-y-4">
+      <input type="text" placeholder="Event Name" class="w-full border p-2 rounded" required />
+      <input type="text" placeholder="Location" class="w-full border p-2 rounded" required />
+      <input type="date" class="w-full border p-2 rounded" required />
+      <select class="w-full border p-2 rounded" required>
+        <option disabled selected>Select Gig Type</option>
+        <option>SOLO</option>
+        <option>BAND</option>
+      </select>
+      <div class="flex justify-end space-x-2 pt-2">
+        <button type="button" onclick="document.getElementById('modal').classList.add('hidden')" class="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300">Cancel</button>
+        <button type="submit" class="px-4 py-2 bg-orange-600 text-white rounded hover:bg-orange-700">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Settings - Star Gigs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+<div class="flex min-h-screen">
+  <!-- Sidebar -->
+  <aside class="w-64 bg-white shadow-md flex flex-col">
+    <div class="p-6 border-b text-2xl font-bold text-orange-600">★ STAR GIGS</div>
+    <nav class="flex-1 p-4 space-y-2">
+      <a href="dashboard.html" class="block px-4 py-2 rounded hover:bg-gray-100">Dashboard</a>
+      <a href="performance.html" class="block px-4 py-2 rounded hover:bg-gray-100">Performances</a>
+      <a href="Gigs.html" class="block px-4 py-2 rounded hover:bg-gray-100">Gigs</a>
+      <a href="Messages.html" class="block px-4 py-2 rounded hover:bg-gray-100">Messages</a>
+      <a href="calender.html" class="block px-4 py-2 rounded hover:bg-gray-100">Calendar</a>
+      <a href="payout.html" class="block px-4 py-2 rounded hover:bg-gray-100">Payouts</a>
+      <a href="Profile.html" class="block px-4 py-2 rounded hover:bg-gray-100">Profile</a>
+      <a href="Settings.html" class="block px-4 py-2 rounded bg-orange-100 text-orange-600 font-semibold">Settings</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="flex-1 p-8 space-y-6">
+    <h1 class="text-2xl font-bold mb-6">Settings</h1>
+
+    <!-- Notification Settings -->
+    <div class="bg-white p-6 rounded shadow max-w-lg space-y-4">
+      <h2 class="text-lg font-semibold mb-4">Notifications</h2>
+      <div class="flex justify-between items-center">
+        <label class="text-sm font-medium">Email</label>
+        <button class="px-4 py-1 text-sm border border-gray-300 rounded hover:bg-gray-100">Change Email</button>
+      </div>
+      <div class="flex justify-between items-center">
+        <label class="text-sm font-medium">Phone</label>
+        <button class="px-4 py-1 text-sm border border-gray-300 rounded hover:bg-gray-100">Change Phone</button>
+      </div>
+    </div>
+
+    <!-- Account Settings -->
+    <div class="bg-white p-6 rounded shadow max-w-lg space-y-4">
+      <h2 class="text-lg font-semibold mb-4">Account</h2>
+      <div>
+        <label class="block text-sm font-medium mb-1">Full Name</label>
+        <input type="text" class="w-full border p-2 rounded" placeholder="Andrew Smith" />
+      </div>
+      <div>
+        <label class="block text-sm font-medium mb-1">Email</label>
+        <input type="email" class="w-full border p-2 rounded" placeholder="andrew@example.com" />
+      </div>
+      <div>
+        <label class="block text-sm font-medium mb-1">Phone</label>
+        <input type="tel" class="w-full border p-2 rounded" placeholder="+1 234 567 8901" />
+      </div>
+      <button class="mt-2 bg-orange-600 text-white px-4 py-2 rounded hover:bg-orange-700">Save Settings</button>
+    </div>
+
+    <!-- Password Settings -->
+    <div class="bg-white p-6 rounded shadow max-w-lg space-y-4">
+      <h2 class="text-lg font-semibold mb-4">Security</h2>
+      <div>
+        <label class="block text-sm font-medium mb-1">New Password</label>
+        <input type="password" class="w-full border p-2 rounded" placeholder="********" />
+      </div>
+      <button class="mt-2 bg-orange-600 text-white px-4 py-2 rounded hover:bg-orange-700">Change Password</button>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>

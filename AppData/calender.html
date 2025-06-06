@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Calendar - Star Gigs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+
+<div class="flex min-h-screen">
+  <!-- Sidebar -->
+  <aside class="w-64 bg-white shadow-md flex flex-col">
+    <div class="p-6 border-b text-2xl font-bold text-orange-600">★ STAR GIGS</div>
+    <nav class="flex-1 p-4 space-y-2">
+      <a href="dashboard.html" class="block px-4 py-2 rounded hover:bg-gray-100">Dashboard</a>
+      <a href="performance.html" class="block px-4 py-2 rounded hover:bg-gray-100">Performances</a>
+      <a href="Gigs.html" class="block px-4 py-2 rounded hover:bg-gray-100">Gigs</a>
+      <a href="Messages.html" class="block px-4 py-2 rounded hover:bg-gray-100">Messages</a>
+      <a href="calender.html" class="block px-4 py-2 rounded bg-orange-100 text-orange-600 font-semibold">Calendar</a>
+      <a href="payout.html" class="block px-4 py-2 rounded hover:bg-gray-100">Payouts</a>
+      <a href="Profile.html" class="block px-4 py-2 rounded hover:bg-gray-100">Profile</a>
+      <a href="Settings.html" class="block px-4 py-2 rounded hover:bg-gray-100">Settings</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="flex-1 p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- Calendar View -->
+    <section class="bg-white p-6 rounded shadow md:col-span-2">
+      <div class="mb-4">
+        <h2 class="text-xl font-semibold">April 2025</h2>
+      </div>
+      <div class="grid grid-cols-7 text-sm text-center gap-2">
+        <div class="font-bold text-gray-600">Sun</div>
+        <div class="font-bold text-gray-600">Mon</div>
+        <div class="font-bold text-gray-600">Tue</div>
+        <div class="font-bold text-gray-600">Wed</div>
+        <div class="font-bold text-gray-600">Thu</div>
+        <div class="font-bold text-gray-600">Fri</div>
+        <div class="font-bold text-gray-600">Sat</div>
+
+        <!-- Calendar days -->
+        <div class="text-gray-300">30</div>
+        <div class="">1</div>
+        <div class="">2</div>
+        <div class="">3</div>
+        <div class="">4</div>
+        <div class="">5</div>
+        <div class="bg-orange-100 text-orange-600 font-semibold rounded-full">6</div>
+
+        <div class="">7</div>
+        <div class="">8</div>
+        <div class="">9</div>
+        <div class="">10</div>
+        <div class="">11</div>
+        <div class="">12</div>
+        <div class="">13</div>
+
+        <div class="">14</div>
+        <div class="">15</div>
+        <div class="">16</div>
+        <div class="">17</div>
+        <div class="">18</div>
+        <div class="">19</div>
+        <div class="">20</div>
+
+        <div class="">21</div>
+        <div class="">22</div>
+        <div class="">23</div>
+        <div class="">24</div>
+        <div class="">25</div>
+        <div class="">26</div>
+        <div class="">27</div>
+
+        <div class="">28</div>
+        <div class="">29</div>
+        <div class="">30</div>
+        <div class="text-gray-300">1</div>
+        <div class="text-gray-300">2</div>
+        <div class="text-gray-300">3</div>
+        <div class="text-gray-300">4</div>
+      </div>
+    </section>
+
+    <!-- Reminders Panel -->
+    <section class="bg-white p-6 rounded shadow">
+      <h3 class="text-lg font-semibold mb-4">Upcoming Reminders</h3>
+      <ul class="space-y-4 text-sm">
+        <li class="flex justify-between items-center border-b pb-2">
+          <div>
+            <p class="font-medium">Sunset Music Festival</p>
+            <p class="text-gray-500">Apr 15, 2025 – 8:30 PM</p>
+          </div>
+          <span class="text-green-600">Upcoming</span>
+        </li>
+        <li class="flex justify-between items-center border-b pb-2">
+          <div>
+            <p class="font-medium">Wedding Gig Confirmation</p>
+            <p class="text-gray-500">Apr 17, 2025 – 6:00 PM</p>
+          </div>
+          <span class="text-yellow-500">Pending</span>
+        </li>
+        <li class="flex justify-between items-center">
+          <div>
+            <p class="font-medium">Follow Up with Jane</p>
+            <p class="text-gray-500">Apr 18, 2025 – 10:00 AM</p>
+          </div>
+          <span class="text-gray-400">Reminder</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gigs - Star Gigs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+<div class="flex min-h-screen">
+  <!-- Sidebar -->
+  <aside class="w-64 bg-white shadow-md flex flex-col">
+    <div class="p-6 border-b text-xl font-bold text-orange-600">★ STAR GIGS</div>
+    <nav class="flex-1 p-4 space-y-2">
+      <a href="dashboard.html" class="block px-4 py-2 rounded hover:bg-gray-200">Dashboard</a>
+      <a href="performance.html" class="block px-4 py-2 rounded hover:bg-gray-200">Performances</a>
+      <a href="gigs.html" class="block px-4 py-2 rounded bg-orange-100 text-orange-600 font-semibold">Gigs</a>
+      <a href="Messages.html" class="block px-4 py-2 rounded hover:bg-gray-200">Messages</a>
+      <a href="calender.html" class="block px-4 py-2 rounded hover:bg-gray-200">Calendar</a>
+      <a href="payout.html" class="block px-4 py-2 rounded hover:bg-gray-200">Payouts</a>
+      <a href="Profile.html" class="block px-4 py-2 rounded hover:bg-gray-200">Profile</a>
+      <a href="Settings.html" class="block px-4 py-2 rounded hover:bg-gray-200">Settings</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="flex-1 p-8 bg-white">
+    <div class="flex justify-between items-center mb-6">
+      <h1 class="text-2xl font-bold">GIGS – <span class="font-normal text-gray-500">Manage your gigs effortlessly!</span></h1>
+    </div>
+
+    <!-- Tabs -->
+    <div class="flex space-x-4 mb-4">
+      <button class="px-4 py-2 bg-orange-500 text-white rounded">GIG BOOKING REQUESTS</button>
+      <button class="px-4 py-2 border rounded text-gray-700 hover:bg-gray-100">UPCOMING GIGS</button>
+      <button class="px-4 py-2 border rounded text-gray-700 hover:bg-gray-100">GIG HISTORY</button>
+    </div>
+
+    <!-- Search & Filter -->
+    <div class="flex items-center space-x-4 mb-6">
+      <input type="text" placeholder="Search gig by name, location, type" class="border p-2 rounded w-full max-w-md" />
+      <button class="flex items-center border px-4 py-2 rounded text-sm text-orange-600 border-orange-500 hover:bg-orange-50">
+        Filter
+        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2a1 1 0 01-.293.707L15 13.414V19a1 1 0 01-1.447.894l-4-2A1 1 0 019 17v-3.586L3.293 6.707A1 1 0 013 6V4z"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Booking Table -->
+    <div class="overflow-auto bg-gray-50 rounded shadow-sm">
+      <table class="w-full table-auto text-sm">
+        <thead class="bg-white text-gray-600 border-b">
+          <tr>
+            <th class="text-left px-4 py-2">Event Name</th>
+            <th class="text-left px-4 py-2">Event Manager</th>
+            <th class="text-left px-4 py-2">Location</th>
+            <th class="text-left px-4 py-2">Amount</th>
+            <th class="text-left px-4 py-2">Date & Time</th>
+            <th class="text-left px-4 py-2">Gig Type</th>
+            <th class="text-center px-4 py-2">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-white border-b">
+            <td class="px-4 py-2">Sunset Music Festival</td>
+            <td class="px-4 py-2">Jenny Wilson</td>
+            <td class="px-4 py-2">Miami Beach, FL</td>
+            <td class="px-4 py-2">$1,234</td>
+            <td class="px-4 py-2">22 Apr 2025, 8:30 pm</td>
+            <td class="px-4 py-2">SOLO</td>
+            <td class="px-4 py-2 text-center space-x-2">
+              <button title="Message" class="text-blue-600">💬</button>
+              <button title="Accept" class="text-green-600">✔️</button>
+              <button title="Reject" class="text-red-600">❌</button>
+            </td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Pagination -->
+    <div class="flex justify-between items-center mt-4 text-sm text-gray-600">
+      <div>Showing 1–7 of 25 results</div>
+      <div class="space-x-2">
+        <button class="px-3 py-1 border rounded">Previous</button>
+        <button class="px-3 py-1 border rounded bg-orange-500 text-white">1</button>
+        <button class="px-3 py-1 border rounded">2</button>
+        <button class="px-3 py-1 border rounded">Next</button>
+      </div>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>

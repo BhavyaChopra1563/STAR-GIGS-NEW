@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Payouts - Star Gigs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+<div class="flex min-h-screen">
+  <!-- Sidebar -->
+  <aside class="w-64 bg-white shadow-md flex flex-col">
+    <div class="p-6 border-b text-2xl font-bold text-orange-600">★ STAR GIGS</div>
+    <nav class="flex-1 p-4 space-y-2">
+      <a href="dashboard.html" class="block px-4 py-2 rounded hover:bg-gray-100">Dashboard</a>
+      <a href="performance.html" class="block px-4 py-2 rounded hover:bg-gray-100">Performances</a>
+      <a href="Gigs.html" class="block px-4 py-2 rounded hover:bg-gray-100">Gigs</a>
+      <a href="Messages.html" class="block px-4 py-2 rounded hover:bg-gray-100">Messages</a>
+      <a href="calender.html" class="block px-4 py-2 rounded hover:bg-gray-100">Calendar</a>
+      <a href="payout.html" class="block px-4 py-2 rounded bg-orange-100 text-orange-600 font-semibold">Payouts</a>
+      <a href="Profile.html" class="block px-4 py-2 rounded hover:bg-gray-100">Profile</a>
+      <a href="Settings.html" class="block px-4 py-2 rounded hover:bg-gray-100">Settings</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="flex-1 p-8">
+    <!-- Heading -->
+    <h1 class="text-2xl font-bold mb-4">Payouts <span class="text-gray-500 font-normal text-sm">– Your payment activity, all in one place</span></h1>
+
+    <!-- Tabs -->
+    <div class="flex space-x-4 mb-6">
+      <button class="px-4 py-2 bg-orange-500 text-white rounded font-medium">PAYOUT OPTIONS</button>
+      <button class="px-4 py-2 border rounded text-gray-700 hover:bg-gray-100">PAYOUT HISTORY</button>
+      <button class="px-4 py-2 border rounded text-gray-700 hover:bg-gray-100">TAXES</button>
+    </div>
+
+    <!-- Payment Methods Section -->
+    <div class="bg-white p-6 rounded shadow">
+      <h2 class="text-lg font-semibold mb-4">How you get paid</h2>
+      <p class="text-sm text-gray-600 mb-6">
+        You can send your money to one or more payout methods. To manage your payout method(s) or assign a strategy,
+        use the Edit option next to each payout method.
+      </p>
+
+      <!-- FastPay Method -->
+      <div class="flex justify-between items-center py-4 border-b">
+        <div>
+          <p class="font-medium">FastPay™</p>
+          <p class="text-sm text-gray-500">**** **** **** 9820 – Withdraws within 5 mins</p>
+        </div>
+        <button class="text-sm border border-gray-300 px-4 py-1 rounded hover:bg-gray-100">Edit</button>
+      </div>
+
+      <!-- Bank Account -->
+      <div class="flex justify-between items-center py-4">
+        <div>
+          <p class="font-medium">Bank Account</p>
+          <p class="text-sm text-gray-500">Checking — ****3024, HSBC Canada</p>
+        </div>
+        <button class="text-sm border border-gray-300 px-4 py-1 rounded hover:bg-gray-100">Edit</button>
+      </div>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>
